@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "USA State Crime Comparison Matrix",
+  "data": {
+    "url": "https://raw.githubusercontent.com/JIANTONGJI/FIT3179Assignment2/main/US_violent_crime_data.csv"
+  },
+  "repeat": {"row": ["Assault", "UrbanPop", "Rape"], "column": ["Murder"]},
+  "transform": [
+    {"filter": "datum.Murder>6"},
+    {"filter": "datum.Assault>6"},
+    {"filter": "datum.UrbanPop>6"},
+    {"filter": "datum.Rape>6"}
+  ],
+  "spec": {
+    "width": 150,
+    "height": 150,
+    "mark": "circle",
+    "encoding": {
+      "x": {
+        "field": {"repeat": "column"},
+        "type": "quantitative",
+        "scale": {"zero": false}
+      },
+      "y": {
+        "field": {"repeat": "row"},
+        "type": "quantitative",
+        "scale": {"zero": false}
+      },
+      "color": {"field": "State", "type": "nominal"}
+    }
+  },
+  "config": {}
+}
