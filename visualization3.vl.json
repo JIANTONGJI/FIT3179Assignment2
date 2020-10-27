@@ -1,4 +1,6 @@
 {
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "title": "USA State Crime Comparison Matrix",
   "data": {
     "url": "https://raw.githubusercontent.com/JIANTONGJI/FIT3179Assignment2/main/US_violent_crime_data.csv"
   },
