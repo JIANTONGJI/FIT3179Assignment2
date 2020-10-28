@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": "USA Crime State Distribution Graph",
-  "width": 1000,
-  "height": 450,
+  "width": 1200,
+  "height": 550,
   "data": {
     "url": "https://raw.githubusercontent.com/JIANTONGJI/FIT3179Assignment2/main/US_violent_crime_data.csv"
   },
@@ -162,7 +162,7 @@
         "align": "right",
         "baseline": "middle",
         "dx": 16,
-        "dy": -420,
+        "dy": -500,
         "fontSize": 12,
         "fontStyle": "italic"
       },
