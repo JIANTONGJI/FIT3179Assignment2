@@ -26,7 +26,7 @@
         "type": "quantitative",
         "scale": {"zero": false}
       },
-      "color": {"field": "State", "type": "nominal"}
+      "color": {"field": "State", "type": "ordinal"}
     }
   },
   "config": {}
