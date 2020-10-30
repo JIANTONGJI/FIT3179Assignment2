@@ -10,21 +10,31 @@
 
   <title>FIT3179 Assignment2 Data Visualization</title>
   <style>
+
+  *{padding:0; margin:0}
+  *{font-family: 'Arial',sans-serif}
+
   #vis1{
-    top:50px;
-    left:300px;
+    top:10px;
+    left:210px;
   }
-    
   #vis2{
-    top:700px;
-    left:200px;
+    top:-490px;
+    left:400px;
   }
-    
   #vis3{
-    
-    top:1000px;
-    left:150px;
+    top:120px;
+    left:-230px;
   }
+
+  h1{
+    font-size: 
+  }
+  h2{
+    font-size: 18px;
+    font-weight: 900;
+  }
+
 
   .container {
       position: relative;
@@ -50,6 +60,23 @@
       right: 0;
       top: 0;
   }
+  .text1{
+    margin-left: 200px;
+    margin-top: 30px;
+
+  }
+  .text2{
+    margin-left: 1100px;
+    margin-top: -600px;
+
+  }
+  .text3{
+    margin-left: 1400px;
+    margin-top: 100px;
+  }
+  
+
+  
 
 
  
@@ -57,20 +84,40 @@
 </head> 
 
 
-<body leftmargin=0 topmargin=0>
+<body margin:0 padding:0>
 <div class="container">
         <div class="left"></div>
         <div class="right"></div>
         <div class="main">
 
+          <div id="header" style="background-color:grey;height: 50px">
+            <center><h1 style="margin-bottom:0;">Violent Crime Rates By US State</center></h1>
+          </div>
+
           <div id="vis1"></div>
-
-
           <div id="vis2"></div>
-  
-  
-  
           <div id="vis3"></div>
+
+          <div id="text1" class="text1">
+            <h2 style="margin-left: 20px">USA State Crime Rate Graph</h2>
+            <ul>
+              <li style="font-size: 14px;padding-top: 10px;margin-left: 30px">Florida has the highest violent crime rate,while Vermont has the lowest.</li>
+              <li style="font-size: 14px;padding-top: 10px;margin-left: 30px">All US states follow the regular,which is assualt most, UrbanPop second, Rape third, Murder least.</li>
+            </ul>
+          </div>
+          <div id="text2" class="text2">
+            <h2 style="margin-left: 20px">USA State Murder Distribution Map</h2>
+            <ul>
+              <li style="font-size: 14px;padding-top: 10px;margin-left: 30px">Most States have relatively low murder rate</li>
+              <li style="font-size: 14px;padding-top: 10px;margin-left: 30px">Compared to other violent crime type,murder has the lowest rate</li>
+            </ul>
+          </div>
+          <div id="text3" class="text3">
+            <h2 style="margin-left: 20px">USA State Crime Comparsion Matrix</h2>
+            <ul>
+              <li style="font-size: 14px;padding-top: 10px;margin-left: 30px">Higher assault rate usually means higher murder rate as well</li>
+            </ul>
+          </div>
           
         </div>
 </div>
