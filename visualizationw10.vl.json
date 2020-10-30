@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "USA Crime State Distribution Graph",
+  "title": "USA State Crime Rate Graph",
   "width":500,
   "height":750,
   "data": {
