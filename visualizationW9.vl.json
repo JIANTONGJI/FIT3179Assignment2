@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "USA State Crime Distribution Map",
+  "title": "USA State Murder Distribution Map",
   "width": 500,
   "height": 300,
   "projection": {"type": "albersUsa"},
