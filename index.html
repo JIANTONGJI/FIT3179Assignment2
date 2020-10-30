@@ -1,51 +1,86 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
   <!-- Import vega-embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
-  
+
   <title>FIT3179 Assignment2 Data Visualization</title>
   <style>
   #vis1{
     top:50px;
-    left:370px;
+    left:300px;
   }
     
   #vis2{
-    top:50px;
-    left:400px;
+    top:700px;
+    left:200px;
   }
     
   #vis3{
-    top:50px;
-    left:370px;
+    
+    top:1000px;
+    left:150px;
   }
+
+  .container {
+      position: relative;
+  }
+  .main {
+      height: 1000px;
+      margin: 0 0px;
+      background-color: none;
+  }
+  .left {
+      position: absolute;
+      width: 200px;
+      height: 1000px;
+      left: 0;
+      top: 0;
+      background-color: grey;
+  }
+  .right {
+      position: absolute;
+      width: 200px;
+      height: 1000px;
+      background-color: grey;
+      right: 0;
+      top: 0;
+  }
+
+
  
 </style>  
-</head>
+</head> 
 
+
+<body leftmargin=0 topmargin=0>
+<div class="container">
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="main">
+
+          <div id="vis1"></div>
+
+
+          <div id="vis2"></div>
+  
+  
+  
+          <div id="vis3"></div>
+          
+        </div>
+</div>
   
 
-  
-  <h2><center>FIT3179 Assignment2 Data Visualization</center></h2>
-  <br>
-    <h2><center>Visualization 1</center></h2>
 
-<div id="vis1"></div>
-<br><br><br><br><br><br><br>
 
-  <h2><center>Visualization 2</center></h2>
-<div id="vis2"></div>
-  <br><br><br><br>
-  <h2><center>xxxxxxxxxx</center></h2>
-  <br><br><br><br><br><br><br><br><br><br><br>
-  
-  <h2><center>Visualization 3</center></h2>
-<div id="vis3"></div>
-  <br>
+
+
+
 
 <script type="text/javascript">
   var specVis1 = "https://jiantongji.github.io/FIT3179Assignment2/visualizationw10.vl.json";
