@@ -33,7 +33,7 @@
           "type": "quantitative",
           "scale": {
             "type": "threshold",
-            "domain": [2, 4, 6, 8, 10, 12, 14, 16, 18],
+            "domain": [2, 4, 6, 8, 10, 12, 14, 16],
             "range": [
               "#fdbe85",
               "#fdab68",
